@@ -4,7 +4,7 @@
  * Page:10
  *
  * Description:
- *  Ê¹ÓÃ²åÈëÅÅĞò·¨¶Ôn¸öÕûÊı½øĞĞÅÅĞò
+ *  ä½¿ç”¨æ’å…¥æ’åºæ³•å¯¹nä¸ªæ•´æ•°è¿›è¡Œæ’åº
  * input:
  * n   ...indicate the number of integers to sort
  * n integers     ..the numbers need to sort
@@ -30,8 +30,8 @@
 const int N = 10000;
 
 /**
-¶ÔÓĞn¸öÔªËØµÄÕûÊıÊı×énumber½øĞĞ²åÈëÅÅĞò
-¸´ÔÓ¶ÈÎªO(n^2)
+å¯¹æœ‰nä¸ªå…ƒç´ çš„æ•´æ•°æ•°ç»„numberè¿›è¡Œæ’å…¥æ’åº
+å¤æ‚åº¦ä¸ºO(n^2)
 @param n: the length of the array
 @number:the array need to sort
 */
@@ -66,5 +66,6 @@ int main()
 	}
 	return 0;
 }
+
 
 

@@ -1,21 +1,21 @@
 /**
- * Á·Ï° 2.1-4
+ * ç»ƒä¹  2.1-4
  * Page:19
- * ÃèÊö£ºÓÐÁ½¸ö¸÷×Ô´æ·ÅÔÚÊý×éAºÍÊý×éBÖÐµÄnÎ»¶þ½øÖÆÕûÊý£¬¿¼ÂÇËüÃÇµÄÏà¼ÓÎÊÌâ¡£
- * ±äÐÎºó£¬±¾³ÌÐòµÄÊµÏÖ£¬ÊäÈë£º
- * Ã¿¸öcaseÊäÈëÈýÐÐÊý¾Ý£¬ÆäÖÐµÚÒ»ÐÐÎªÒ»¸öÔÚ[2,10]ÄÚµÄÒ»¸öÕûÊýbase£¬µÚ¶þÈýÐÐ´ú±íbase½øÖÆµÄÊý×Ö
- * Êä³ö£ºÇóµÚ¶þ¡¢ÈýÐÐËù´ú±íÊý×ÖµÄºÍ£¬²¢½«½á¹ûÒÔbase½øÖÆµÄÐÎÊ½³ÊÏÖ
+ * æè¿°ï¼šæœ‰ä¸¤ä¸ªå„è‡ªå­˜æ”¾åœ¨æ•°ç»„Aå’Œæ•°ç»„Bä¸­çš„nä½äºŒè¿›åˆ¶æ•´æ•°ï¼Œè€ƒè™‘å®ƒä»¬çš„ç›¸åŠ é—®é¢˜ã€‚
+ * å˜å½¢åŽï¼Œæœ¬ç¨‹åºçš„å®žçŽ°ï¼Œè¾“å…¥ï¼š
+ * æ¯ä¸ªcaseè¾“å…¥ä¸‰è¡Œæ•°æ®ï¼Œå…¶ä¸­ç¬¬ä¸€è¡Œä¸ºä¸€ä¸ªåœ¨[2,10]å†…çš„ä¸€ä¸ªæ•´æ•°baseï¼Œç¬¬äºŒä¸‰è¡Œä»£è¡¨baseè¿›åˆ¶çš„æ•°å­—
+ * è¾“å‡ºï¼šæ±‚ç¬¬äºŒã€ä¸‰è¡Œæ‰€ä»£è¡¨æ•°å­—çš„å’Œï¼Œå¹¶å°†ç»“æžœä»¥baseè¿›åˆ¶çš„å½¢å¼å‘ˆçŽ°
  *
  */
 #include<stdio.h>
 #include<string.h>
 const int N = 10000;
 /**
- * Êý×éa,b·Ö±ð´ú±íalength,blengthÎ»µÄbase½øÖÆÊý£¬ÆäÖÐÊý×éµÄÃ¿¸öÊý´ú±íÒ»Î»
- * ÇóÒÔÉÏÁ½¸öbase½øÖÆÊýµÄºÍ£¬ÎªÇó·½±ã£¬ÆäÖÐbase <= 10
- * @param ×Ö·û´® a,Êý×éa,a[i]´ú±í¸ÃÎ»ÊýµÄÊýÖµ
- * @param ×Ö·û´® b,ÀàËÆÊý×éa£¬´ú±íÒ»¸öbase½øÖÆµÄÊý×Ö
- * ÇóÒÔÉÏÁ½ÊýµÄºÍ
+ * æ•°ç»„a,båˆ†åˆ«ä»£è¡¨alength,blengthä½çš„baseè¿›åˆ¶æ•°ï¼Œå…¶ä¸­æ•°ç»„çš„æ¯ä¸ªæ•°ä»£è¡¨ä¸€ä½
+ * æ±‚ä»¥ä¸Šä¸¤ä¸ªbaseè¿›åˆ¶æ•°çš„å’Œï¼Œä¸ºæ±‚æ–¹ä¾¿ï¼Œå…¶ä¸­base <= 10
+ * @param å­—ç¬¦ä¸² a,æ•°ç»„a,a[i]ä»£è¡¨è¯¥ä½æ•°çš„æ•°å€¼
+ * @param å­—ç¬¦ä¸² b,ç±»ä¼¼æ•°ç»„aï¼Œä»£è¡¨ä¸€ä¸ªbaseè¿›åˆ¶çš„æ•°å­—
+ * æ±‚ä»¥ä¸Šä¸¤æ•°çš„å’Œ
 */
 void sum(char *a,char *b,int base) {
    int ans[N];
@@ -74,3 +74,4 @@ int main()
 	}
 	return 0;
 }
+
