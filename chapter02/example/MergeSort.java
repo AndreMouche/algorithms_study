@@ -53,8 +53,8 @@ public class MergeSort {
 	}
 
 	/**
-	 * ÒÑÖªnumbers[p..q]¼°numbers[q+1..r]ÒÑ°´´ÓĞ¡µ½´óÅÅĞò, 
-	 * ºÏ²¢numbers[p..r],Ê¹µÃÆä´ÓĞ¡µ½´óÅÅĞò
+	 * å·²çŸ¥numbers[p..q]åŠnumbers[q+1..r]å·²æŒ‰ä»å°åˆ°å¤§æ’åº, 
+	 * åˆå¹¶numbers[p..r],ä½¿å¾—å…¶ä»å°åˆ°å¤§æ’åº
 	 * @param p
 	 * @param q
 	 * @param r
@@ -88,7 +88,7 @@ public class MergeSort {
 	}
 
 	/**
-	 * ¶ÔÊı×énumbersÏÂ±êÇø¼äÎª[left,right]µÄ×Ó¼¯½øĞĞÅÅĞò
+	 * å¯¹æ•°ç»„numbersä¸‹æ ‡åŒºé—´ä¸º[left,right]çš„å­é›†è¿›è¡Œæ’åº
 	 * @param left
 	 * @param right
 	 */
@@ -96,9 +96,9 @@ public class MergeSort {
 		if (left >= right)
 			return;
 		int mid = (left + right) >> 1;
-		this.merge_sort(left, mid); // ¶Ô×ó±ßĞòÁĞ½øĞĞÅÅĞò
-		this.merge_sort(mid + 1, right); // ¶ÔÓÒ±ßĞòÁĞ½øĞĞÅÅĞò
-		this.merge(left, mid, right); // ºÏ²¢ÅÅºÃĞòµÄ×óÓÒ×Ó¼¯
+		this.merge_sort(left, mid); // å¯¹å·¦è¾¹åºåˆ—è¿›è¡Œæ’åº
+		this.merge_sort(mid + 1, right); // å¯¹å³è¾¹åºåˆ—è¿›è¡Œæ’åº
+		this.merge(left, mid, right); // åˆå¹¶æ’å¥½åºçš„å·¦å³å­é›†
 
 	}
 
@@ -106,7 +106,7 @@ public class MergeSort {
 		Scanner cin = new Scanner(System.in);
 		int n;
 		while (cin.hasNext()) { 
-			n = cin.nextInt(); //ĞèÅÅĞòµÄÊı×Ö¸öÊı
+			n = cin.nextInt(); //éœ€æ’åºçš„æ•°å­—ä¸ªæ•°
 			MergeSort mergesort = new MergeSort();
 			for (int i = 0; i < n; i++) {
 				int num = cin.nextInt();
