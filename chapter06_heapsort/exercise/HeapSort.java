@@ -33,10 +33,10 @@ import java.util.Scanner;
  */
 public class HeapSort {
 	/**array to sort*/
-	private List<Integer> numbers = new ArrayList<Integer>();
+	protected List<Integer> numbers = new ArrayList<Integer>();
     
 	/**当前堆的大小。。不是很准确，先这样吧*/
-	private int heapsize = 0;
+	protected int heapsize = 0;
 	
 	public int getHeapsize() {
 		return heapsize;
