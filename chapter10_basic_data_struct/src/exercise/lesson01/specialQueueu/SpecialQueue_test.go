@@ -8,8 +8,8 @@
 package specialQueueu
 
 import (
-. "launchpad.net/gocheck"
-"testing"
+	. "launchpad.net/gocheck"
+	"testing"
 )
 
 func Test(t *testing.T) {TestingT(t) }

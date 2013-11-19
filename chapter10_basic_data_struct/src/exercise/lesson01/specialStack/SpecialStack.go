@@ -19,60 +19,60 @@
 package specialStack
 
 import (
-	"chapter10_basic_data_struct/example/queue"
+	"example/queue"
 	"errors"
 )
 
 type SpecialStack struct {
-	qContainer []queue.MyQueue
-	pushQueueId int
-	length int           //上限
-	currentLength int     //当前长度
+	qContainer    []queue.MyQueue
+	pushQueueId   int
+	length        int //上限
+	currentLength int //当前长度
 }
 
 func NewSpecialStack(length int) (SpecialStack) {
-    q1 := queue.NewMyQueue(length)
+	q1 := queue.NewMyQueue(length)
 	q2 := queue.NewMyQueue(length)
-	return SpecialStack{qContainer:[]queue.MyQueue{*q1,*q2},
-						pushQueueId:0,
-						length:length,
-						currentLength:0}
+	return SpecialStack{qContainer:[]queue.MyQueue{*q1, *q2},
+		pushQueueId:0,
+		length:length,
+		currentLength:0}
 }
 
-func (self *SpecialStack)IsEmpty() (bool) {
+func (self *SpecialStack) IsEmpty() (bool) {
 	return self.currentLength == 0
 }
 
 //注意：只能往enQueue
 func (self *SpecialStack) Push(item int) error {
 	if self.length > self.currentLength { //必须确保当前栈内数据不超过length,否则所有数据将无法出栈
-	   self.currentLength ++
-	   return self.qContainer[self.pushQueueId].EnQueue(item)
+		self.currentLength ++
+		return self.qContainer[self.pushQueueId].EnQueue(item)
 	}
 	return errors.New("Is full now")
 }
 
-func (self *SpecialStack) Pop() (int,error) {
+func (self *SpecialStack) Pop() (int, error) {
 	if self.IsEmpty() {
-		return 0,errors.New("Empty stack")
+		return 0, errors.New("Empty stack")
 	}
 
-	if self.qContainer[self.pushQueueId].Empty(){
+	if self.qContainer[self.pushQueueId].Empty() {
 		self.pushQueueId ^= 1
 	}
 
 	otherQueueId := self.pushQueueId ^ 1
 	for {
-		val,_ := self.qContainer[self.pushQueueId].DeQueue()
-		if self.qContainer[self.pushQueueId].Empty(){ //pushQueue的最后一个元数为当前栈的栈头
+		val, _ := self.qContainer[self.pushQueueId].DeQueue()
+		if self.qContainer[self.pushQueueId].Empty() { //pushQueue的最后一个元数为当前栈的栈头
 			self.currentLength --
-			return val,nil
+			return val, nil
 		}
 
 		self.qContainer[otherQueueId].EnQueue(val)
 	}
 
-	return 0,errors.New("Unknow error")
+	return 0, errors.New("Unknow error")
 }
 
 

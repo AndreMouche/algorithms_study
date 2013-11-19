@@ -17,22 +17,23 @@
 package specialQueueu
 
 import (
-	"chapter10_basic_data_struct/example/stack"
+	"example/stack"
 	"errors"
 )
+
 type SpecilQueue struct {
 	enStack *stack.MyStack
 	outStack *stack.MyStack
 }
 
 func NewSpecialQueue(maxLength int) *SpecilQueue {
-    return &SpecilQueue{
+	return &SpecilQueue{
 		enStack:stack.NewMyStack(maxLength),
 		outStack: stack.NewMyStack(maxLength),
 	}
 }
 
-func (self *SpecilQueue) Empty() bool{
+func (self *SpecilQueue) Empty() bool {
 	return self.enStack.IsEmpty() && self.outStack.IsEmpty()
 }
 
@@ -40,22 +41,22 @@ func (self *SpecilQueue) EnQueue(x int) error {
 	return self.enStack.Push(x)
 }
 
-func (self *SpecilQueue) DeQueue() (int,error) {
+func (self *SpecilQueue) DeQueue() (int, error) {
 	if self.Empty() {
-		return 0,errors.New("Empty queue")
+		return 0, errors.New("Empty queue")
 	}
 
 	if self.outStack.IsEmpty() {
 		for {
-		   if self.enStack.IsEmpty() {
-			   break
-		   }
+			if self.enStack.IsEmpty() {
+				break
+			}
 
-		   val,_ := self.enStack.Pop()
-		   self.outStack.Push(val)
+			val, _ := self.enStack.Pop()
+			self.outStack.Push(val)
 		}
 	}
 
 	result, err := self.outStack.Pop()
-	return result,err
+	return result, err
 }

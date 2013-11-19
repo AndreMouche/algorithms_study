@@ -26,7 +26,8 @@ func NewLinkedListSentinel() LinkedList {
 }
 
 /**
- 借助哨兵可类似形成一个循环链表的效果，当第一次插入元素x curItem时：
+ 借助哨兵可类似形成一个循环链表的效果，
+ 1.当第一次插入元素x curItem时：
   curItem的前后元素均为哨兵
   curItem.next = self.sentinelItem.next = self.sentinelItem
   curItem.pre = self.sentinelItem
@@ -34,7 +35,7 @@ func NewLinkedListSentinel() LinkedList {
   self.sentinelItem.next.pre = self.sentinelItem.pre = curItem,
   self.sentinelItem.next = curItem
 
-  若当前list非空，curItem分析如下：
+ 2.若当前list非空，curItem分析如下：
    curItem的前元素为哨兵
    curItem.pre = self.sentinelItem
 

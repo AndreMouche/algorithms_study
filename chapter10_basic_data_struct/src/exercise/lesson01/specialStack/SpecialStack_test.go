@@ -7,7 +7,6 @@
  */
 package specialStack
 
-
 import (
 	. "launchpad.net/gocheck"
 	"testing"
@@ -42,8 +41,8 @@ func (self *MyQueueTestSuite) TestA(c *C) {
 		}
 		top , err := self.myStack.Pop()
 		fmt.Println(top)
-		c.Assert(err,IsNil)
-		c.Assert(expected,Equals,top)
+		c.Assert(err, IsNil)
+		c.Assert(expected, Equals, top)
 		expected --
 	}
 }
