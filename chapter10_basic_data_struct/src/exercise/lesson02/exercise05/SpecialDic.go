@@ -35,6 +35,7 @@ func NewDic() (*LinkDir) {
 查找复杂度O(n)
  */
 func (self *LinkDir) Search(key int) (*DicItem) {
+	//we do not use head as the stop sentinel as we may delete head in delete op
 	for curItem := self.head.next; curItem.key != sentinelKey; curItem = curItem.next {
 		if curItem.key == key {
 			return curItem

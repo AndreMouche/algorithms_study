@@ -6,6 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 package exercise02
+
 import (
 	"launchpad.net/gocheck"
 	"testing"
@@ -39,8 +40,8 @@ func (self *MyStackTestSuite) Test(c *gocheck.C) {
 			break
 		}
 		top , err := self.myStack.Pop()
-		c.Assert(err,gocheck.IsNil)
-		c.Assert(expected,gocheck.Equals,top)
+		c.Assert(err, gocheck.IsNil)
+		c.Assert(expected, gocheck.Equals, top)
 		expected --
 	}
 }

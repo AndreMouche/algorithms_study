@@ -45,7 +45,7 @@ func (self *SingleListStack) Pop() (int, error) {
 
 	item := self.head
 	self.head = self.head.next
-	return item.value,nil
+	return item.value, nil
 
 }
 

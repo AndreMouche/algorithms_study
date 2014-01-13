@@ -19,23 +19,23 @@ type SLinkedListQueue struct {
 	tail *LinkedListQueueItem
 }
 
-func NewSLinkedListQueue()(*SLinkedListQueue){
+func NewSLinkedListQueue() (*SLinkedListQueue) {
 	return &SLinkedListQueue{
 		head:nil,
 		tail:nil,
 	}
 }
 
-func (self *SLinkedListQueue) EnQueue(elem int){
+func (self *SLinkedListQueue) EnQueue(elem int) {
 
 	item := &LinkedListQueueItem{
 		value:elem,
 		next:nil,
 	}
 
-	if self.head == nil{
-	   self.head = item
-	   self.tail = item
+	if self.head == nil {
+		self.head = item
+		self.tail = item
 	} else {
 		self.tail.next = item
 		self.tail = item
@@ -43,9 +43,9 @@ func (self *SLinkedListQueue) EnQueue(elem int){
 }
 
 
-func (self *SLinkedListQueue) DeQueue() (int,error){
-    if self.head == nil {
-		return 0,errors.New("Empty Queue")
+func (self *SLinkedListQueue) DeQueue() (int, error) {
+	if self.head == nil {
+		return 0, errors.New("Empty Queue")
 	}
 
 	item := self.head
@@ -53,10 +53,10 @@ func (self *SLinkedListQueue) DeQueue() (int,error){
 	if self.head == nil { //已经移至队尾
 		self.tail = nil
 	}
-	return item.value,nil
+	return item.value, nil
 }
 
-func (this *SLinkedListQueue) Empty() bool{
+func (this *SLinkedListQueue) Empty() bool {
 	return this.head == nil
 }
 
