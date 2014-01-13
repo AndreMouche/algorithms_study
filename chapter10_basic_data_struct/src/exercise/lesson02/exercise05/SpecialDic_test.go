@@ -28,17 +28,19 @@ func TestA(t *testing.T) {
 
 	for i := 0; i < 10; i++ {
 		item := dic.Search(i)
-		if item == nil || item.value != i*2{
-			 t.Error("item is empty or invalid value")
+		if item == nil || item.value != i*2 {
+			t.Error("item is empty or invalid value")
 		}
 
-		dic.Delete(i)
+		flag := dic.Delete(i)
+		if flag == false {
+			t.Error("Item should delete ok")
+		}
+
 		item = dic.Search(i)
 		if item != nil {
 			t.Error("Item should already be delete here")
 		}
-
-
 	}
 
 

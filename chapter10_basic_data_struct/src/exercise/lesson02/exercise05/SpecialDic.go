@@ -7,7 +7,7 @@
  */
 package exercise05
 
-import "fmt"
+const sentinelKey = -1
 
 type DicItem struct {
 	key   int
@@ -21,7 +21,7 @@ type LinkDir struct {
 
 func NewDic() (*LinkDir) {
 	sentinel := &DicItem{
-		key:-1,
+		key:sentinelKey,
 		value:0,
 	}
 
@@ -35,15 +35,9 @@ func NewDic() (*LinkDir) {
 查找复杂度O(n)
  */
 func (self *LinkDir) Search(key int) (*DicItem) {
-	for curItem := self.head.next; curItem != self.head; curItem = curItem.next {
-		fmt.Println(curItem.key)
+	for curItem := self.head.next; curItem.key != sentinelKey; curItem = curItem.next {
 		if curItem.key == key {
 			return curItem
-		}
-
-		if curItem.key == -1 {
-			fmt.Println("errpr-1")
-			break
 		}
 	}
 
@@ -54,11 +48,14 @@ func (self *LinkDir) Search(key int) (*DicItem) {
 复杂度为O(n)
  */
 func (self *LinkDir) Insert(key, value int) (ok bool) {
+	//can not use sentinelKey as key
+	if key == sentinelKey {
+		return false
+	}
 	item := self.Search(key)
 	if item != nil {
 		return false
 	}
-
 	item = &DicItem{key:key, value:value, next:self.head.next}
 	self.head.next = item
 	return true
@@ -69,7 +66,7 @@ func (self *LinkDir) Delete(key int) (bool) {
 	if item == nil {
 		return false
 	}
-	//将链表item后一个元素的所有值拷贝至当前元素，并删除item.next
+	//将链表item后一个元素的所有值拷贝至当前元素，并删除item.next,如果item.next为head..
 	item.key = item.next.key
 	item.value = item.next.value
 	item.next = item.next.next
