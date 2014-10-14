@@ -3,7 +3,7 @@
  * 方法类似上一题：https://github.com/AndreMouche/algorithms_study/blob/master/leetcode/linked_list_cycle_II.cpp
  * 设置两个指针，第一个指针走1步，第二个指针每次走两步，若环存在，
  * 他们必将最后相交
- *
+ * 根据他们性质，即2s-s=s,s每次增1，根据环的性质，故他们总会在第一个走完环之前相遇。
  * */
 /**
  * Definition for singly-linked list.
