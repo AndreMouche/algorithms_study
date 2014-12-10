@@ -5,13 +5,15 @@ https://oj.leetcode.com/problems/candy/
 2）评分较高的人所拥有的糖果数比其友邻大。
 问：最少需要多少糖果给这些人？
 
-DP,空间复杂度O(N)，时间复杂度O(N)
+DP+Greedy
+空间复杂度O(N)，时间复杂度O(N)
 dp[i][0]表示第i左侧有多少数字是连续递减的,则
 if(ratings[i]>ratings[i-1]) {
   dp[i][0] = dp[i-1]+1
 }else {
   dp[i][0] = 0
 }
+那么第i位置要满足左邻条件的糖果数至少为dp[i][0]+1
 
 同样的，dp[i][1]表示i右侧有多少数字连续递减的，则
 if(ratings[i]>ratings[i+1]) {
@@ -19,14 +21,20 @@ if(ratings[i]>ratings[i+1]) {
 } else {
   dp[i][1] = 0;
 }
+同样的，第i位置要满足友邻条件需要的糖果数至少为dp[i][1]+1
+那么每个位置的最小蛋糕数为
+   ans[i] = max(dp[i][0],dp[i][1]) +1
 
-那么每个位置的最小蛋糕数为ans[i] = max(dp[i][0],dp[i][1]) +1
-证明：
-假设r2<r3
-那么dp[2][0] < dp[3][0]
-dp[2][1] = 0,dp[3][0]>=0
-最终r3的糖果数比r2多且只多一个
-所有人的糖果数都符合这一规律，即所有人获得的都是最小值..
+假设r[i]<r[i+1],那么
+
+1. dp[i+1][0] = dp[i][0]+1
+2. dp[i][1] = 0,dp[i+1][1]>=0
+得到：
+1. ans[i] = dp[i][0] + 1
+2. ans[i+1] = max(dp[i][0]+1,dp[i+1][1]) +1
+无论如何，ans[i+1]>ans[i] ，满足条件2.
+
+
 */
 #include<stdio.h>
 #include<iostream>
