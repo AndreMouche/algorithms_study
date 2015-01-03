@@ -16,6 +16,8 @@ for each startid from 0 to n
      sum[start+1][j] = sum[start][j]-(gas[start]-cost[start]) 
      gas[start]-cost[start] = sum[start][start+1] > 0
      =>sum[start+1][j] < sum[start][j] < 0
+     =>for all k < j & k > start,
+        sum[k][j] = sum[start][j]-sum[start][k] < sum[start][j] < 0
      =>min start should be j + 1
 
 
