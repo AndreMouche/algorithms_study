@@ -28,3 +28,5 @@ struct RandomListNode {
 
 [clone-graph](https://oj.leetcode.com/problems/clone-graph/) 深拷贝一个地图结构
 递归，使用map辅助
+
+[palindrome-partitioning](https://oj.leetcode.com/problems/palindrome-partitioning/) 分割字符串并使得每个字串均为回文。算出所有分割方式。 回溯
