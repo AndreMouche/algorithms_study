@@ -30,5 +30,9 @@ struct RandomListNode {
 递归，使用map辅助
 
 [palindrome-partitioning](https://oj.leetcode.com/problems/palindrome-partitioning/) 分割字符串并使得每个字串均为回文。算出所有分割方式。 回溯
+
+[palindrome-partitioningII](https://oj.leetcode.com/problems/palindrome-partitioning-ii/) 求题1中最少分割次数。dp,O(n*n),dp[i]表示从sub[0,i]的最小分割次数，isPa[i][j]表示sub[i,j]是否是回文
+
 [longest substring without repeating characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/) 找出字符串中最长的无重复字符的字串。hash,设置左右指针。O(n)
+
 
