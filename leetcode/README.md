@@ -35,4 +35,6 @@ struct RandomListNode {
 
 [longest substring without repeating characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/) 找出字符串中最长的无重复字符的字串。hash,设置左右指针。O(n)
 
+[https://oj.leetcode.com/problems/surrounded-regions/](https://oj.leetcode.com/problems/surrounded-regions/) 找出被X包围的所有O，并将其置为X。BFS，对各个边上的O点进行bfs,未被 访问到的O点则为被包围的点。O(n*m)
+
 
