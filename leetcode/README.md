@@ -37,4 +37,5 @@ struct RandomListNode {
 
 [https://oj.leetcode.com/problems/surrounded-regions/](https://oj.leetcode.com/problems/surrounded-regions/) 找出被X包围的所有O，并将其置为X。BFS，对各个边上的O点进行bfs,未被 访问到的O点则为被包围的点。O(n*m)
 
-
+[https://leetcode.com/problems/sum-root-to-leaf-numbers/](https://leetcode.com/problems/sum-root-to-leaf-numbers/) 深度优先搜索。
+二叉树的每个节点值为0-9的数字，root到叶子节点的路径长定义为途中各个节点值排列后得到的数字。求该树所有叶子的路径和。
