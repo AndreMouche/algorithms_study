@@ -1,5 +1,6 @@
 /**
  *https://leetcode.com/problems/longest-consecutive-sequence/
+ *map,O(nlogn)
  */
 #include<stdio.h>
 #include<iostream>

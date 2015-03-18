@@ -41,4 +41,4 @@ struct RandomListNode {
 二叉树的每个节点值为0-9的数字，root到叶子节点的路径长定义为途中各个节点值排列后得到的数字。求该树所有叶子的路径和。
 
 
-[https://leetcode.com/problems/longest-consecutive-sequence/](https://leetcode.com/problems/longest-consecutive-sequence/) 给一个未排序的整形数组，求排序后最大的连续数字长度，要求复杂度为O(n).  参考别人的用了map,没有达到O(n)。达到O(n)的一种方法是使用hash,可惜被我玩惨了，回去慢慢研究。。
+[https://leetcode.com/problems/longest-consecutive-sequence/](https://leetcode.com/problems/longest-consecutive-sequence/) 给一个未排序的整形数组，求排序后最大的连续数字长度，要求复杂度为O(n).  参考别人的用了map,O(nlogn)。达到O(n)的一种方法是使用unorderset,往两边边扫边从set中剔除元素。
