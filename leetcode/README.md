@@ -42,3 +42,21 @@ struct RandomListNode {
 
 
 [https://leetcode.com/problems/longest-consecutive-sequence/](https://leetcode.com/problems/longest-consecutive-sequence/) 给一个未排序的整形数组，求排序后最大的连续数字长度，要求复杂度为O(n).  参考别人的用了map,O(nlogn)。达到O(n)的一种方法是使用unorderset,往两边边扫边从set中剔除元素。
+<br>
+[https://leetcode.com/problems/word-ladder/](https://leetcode.com/problems/word-ladder/)两个字符串仅一个字符不一样则为相通。给你一个长度相等的startStr,endStr，一个相同长度的字符串集合dict,问startStr能否通过dict连通endStr,若能，则返回连通的字符串个数，包括首尾。若否，返回0.
+<br>
+看提示说是BFS，想当然的建图，算出个字符串间联通图，然后无耻的BFS，然后无限的TimeOut。。看了一下Discuss,瞬间被秒，大概思路是：从startStr开始，依次枚举变换该字符串的每个元素并将dict中存在的字符串放进下一解集，依次类推，直到遇到endStr...
+<br>
+经典的BFS题目。
+想象一下，这个变换过程是一个树，每一层是当前所有的变换结果 ，下一层又是上一层的字符串的所有的变换结果。例子：
+HIT
+AIT, BIT, CIT, DIT.....     HAT, HBT, HCT, HDT.....    HIA, HIB, HIC, HID....
+
+HIT 可以有这么多种变换方式，而AIT, BIT本身也可以以相同的方式展开，这就形成了一个相当大的树。
+HIT
+AIT, BIT, CIT, DIT.....     HAT, HBT, HCT, HDT.....    HIA, HIB, HIC, HID....
+ |    (BIT,CIT这些没有再展开了，画图实在不方便)
+ |
+AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
+
+[网上比较好的解题报告](http://blog.sina.com.cn/s/blog_eb52001d0102v2ds.html)
