@@ -64,3 +64,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [word-ladder-ii](https://leetcode.com/problems/word-ladder-ii/),求出上题最短连接串。思路与上题类似，多了一个回溯的过程。
 
 [binary-tree-maximum-path-sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) 给出一颗二叉树，其中一条路径的值为该路径上所有节点值的和，求最大的路径值。dfs
+
+[6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) 简单的字符串操作
