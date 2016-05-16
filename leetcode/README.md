@@ -81,3 +81,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 ```
 
 [337. House Robber III](https://leetcode.com/problems/house-robber-iii/) 简单递归，树
+
+[65.Valid Number](https://leetcode.com/problems/valid-number/) 判断字符串是否为数字，模拟题，就是测试数据太变态，要很仔细很仔细才行。。
