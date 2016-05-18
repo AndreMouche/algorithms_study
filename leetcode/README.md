@@ -85,3 +85,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [65.Valid Number](https://leetcode.com/problems/valid-number/) 判断字符串是否为数字，模拟题，就是测试数据太变态，要很仔细很仔细才行。。
 
 [68. Text Justification](https://leetcode.com/problems/text-justification/) 模拟题，细心即可。
+
+[104.MaxDepthOfBinary.java](https://leetcode.com/problems/maximum-depth-of-binary-tree/) 求二叉树的树高，非递归解法&递归
