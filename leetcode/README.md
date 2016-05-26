@@ -92,3 +92,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) 简单题
 [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) 简单题，排列组合
 [202.Happy Number](https://leetcode.com/problems/happy-number/) 简单题，模拟，检查循坏
+[21.Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) 合并已排序链表
+[24.Swap NOdes in pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) 简单链表操作
