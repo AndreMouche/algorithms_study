@@ -94,4 +94,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [202.Happy Number](https://leetcode.com/problems/happy-number/) 简单题，模拟，检查循坏
 [21.Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) 合并已排序链表
 [24.Swap NOdes in pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) 简单链表操作
-[198.House Robber](https://leetcode.com/problems/house-robber/) 简单动规
+[198.House Robber](https://leetcode.com/problems/house-robber/) 简单动规a
+[27.Remove Element](https://leetcode.com/problems/remove-element/) 简单模拟题
