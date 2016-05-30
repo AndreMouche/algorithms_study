@@ -101,4 +101,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [101.Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) 简单模拟题 
 [232.Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) 两个栈实现一个队列
 [66.Plus One](https://leetcode.com/problems/plus-one/) 简单模拟题，模拟十进制相加
-[342.Power Of Four](https://leetcode.com/problems/power-of-four/) 简单题
+[342.Power Of Four](https://leetcode.com/problems/power-of-four/) 简单题 
+[118.Pascal's Trangle](https://leetcode.com/problems/pascals-triangle/) 简单题
