@@ -90,19 +90,35 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 
 
 [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) 简单题
+
 [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) 简单题，排列组合
+
 [202.Happy Number](https://leetcode.com/problems/happy-number/) 简单题，模拟，检查循坏
+
 [21.Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) 合并已排序链表
+
 [24.Swap NOdes in pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) 简单链表操作
+
 [198.House Robber](https://leetcode.com/problems/house-robber/) 简单动规a
+
 [27.Remove Element](https://leetcode.com/problems/remove-element/) 简单模拟题
+
 [110.Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) 判断是否为平衡二叉树
+
 [107.Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)简单题
+
 [101.Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) 简单模拟题 
+
 [232.Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) 两个栈实现一个队列
+
 [66.Plus One](https://leetcode.com/problems/plus-one/) 简单模拟题，模拟十进制相加
+
 [342.Power Of Four](https://leetcode.com/problems/power-of-four/) 简单题 
+
 [118.Pascal's Trangle](https://leetcode.com/problems/pascals-triangle/) 简单题 
+
 [26. Remove Duplicated from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 简单题  
+
 [27. Factorial Trailing Zeros](https://leetcode.com/problems/factorial-trailing-zeroes/) 简单数学题 
+
 [102.Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) 107 的简化版，同样的思路，唯一不同的是这题用go自己实现了一个队列
