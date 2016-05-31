@@ -72,11 +72,11 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
      * 规律题
      * 0
      * 进位
-     * 1 
+     * 1
      * 进位后
      * 10 11
      * 再进位后
-     * 100 101 110 111 
+     * 100 101 110 111
      * 。。即每次进位后的1的个数，都是前面所有小于它的数字的1个数加1.以此类推即可
 ```
 
@@ -107,20 +107,21 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 
 [107.Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)简单题
 
-[101.Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) 简单模拟题 
+[101.Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) 简单模拟题
 
 [232.Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) 两个栈实现一个队列
 
 [66.Plus One](https://leetcode.com/problems/plus-one/) 简单模拟题，模拟十进制相加
 
-[342.Power Of Four](https://leetcode.com/problems/power-of-four/) 简单题 
+[342.Power Of Four](https://leetcode.com/problems/power-of-four/) 简单题
 
-[118.Pascal's Trangle](https://leetcode.com/problems/pascals-triangle/) 简单题 
+[118.Pascal's Trangle](https://leetcode.com/problems/pascals-triangle/) 简单题
 [119. Pascal's Triangle II] (https://leetcode.com/problems/pascals-triangle-ii/) 简单题，注意空间复杂度
 
 [26. Remove Duplicated from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 简单题  
 
-[27. Factorial Trailing Zeros](https://leetcode.com/problems/factorial-trailing-zeroes/) 简单数学题 
+[27. Factorial Trailing Zeros](https://leetcode.com/problems/factorial-trailing-zeroes/) 简单数学题
 
-[102.Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) 107 的简化版，同样的思路，唯一不同的是这题用go自己实现了一个队列 
+[102.Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) 107 的简化版，同样的思路，唯一不同的是这题用go自己实现了一个队列
 
+[9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) 简单题，判断数字是否回文，负数特判
