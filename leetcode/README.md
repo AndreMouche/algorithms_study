@@ -125,3 +125,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [102.Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) 107 的简化版，同样的思路，唯一不同的是这题用go自己实现了一个队列
 
 [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) 简单题，判断数字是否回文，负数特判
+
+[112. Path Sum](https://leetcode.com/problems/path-sum/) 简单题，注意空树特判
