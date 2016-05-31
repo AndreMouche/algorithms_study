@@ -116,9 +116,11 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [342.Power Of Four](https://leetcode.com/problems/power-of-four/) 简单题 
 
 [118.Pascal's Trangle](https://leetcode.com/problems/pascals-triangle/) 简单题 
+[119. Pascal's Triangle II] (https://leetcode.com/problems/pascals-triangle-ii/) 简单题，注意空间复杂度
 
 [26. Remove Duplicated from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 简单题  
 
 [27. Factorial Trailing Zeros](https://leetcode.com/problems/factorial-trailing-zeroes/) 简单数学题 
 
-[102.Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) 107 的简化版，同样的思路，唯一不同的是这题用go自己实现了一个队列
+[102.Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) 107 的简化版，同样的思路，唯一不同的是这题用go自己实现了一个队列 
+
