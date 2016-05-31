@@ -129,3 +129,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [112. Path Sum](https://leetcode.com/problems/path-sum/) 简单题，注意空树特判
 
 [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) 简单模拟题，不需要判断斜对角哦
+
+[111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) 简单题
