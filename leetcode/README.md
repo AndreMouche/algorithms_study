@@ -135,3 +135,9 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) 简单题，两个队列实现一个栈
 
 [160. Intersection of two linked lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) 这个数学题
+
+[219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) 简单题，set
+
+[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) 简单题，合并两个排序数组，从后往前扫
+
+[299. Bulls And Cows](https://leetcode.com/problems/bulls-and-cows/) 简单模拟题
