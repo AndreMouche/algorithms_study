@@ -132,6 +132,8 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 
 [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) 简单题
 
+[205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) 判断象形字符串，简单模拟
+
 [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) 简单题，两个队列实现一个栈
 
 [160. Intersection of two linked lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) 这个数学题
