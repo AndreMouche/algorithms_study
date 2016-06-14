@@ -38,7 +38,7 @@ func isValid(s string) bool {
 	return sid == -1
 }
 
-func main() {
+func main20() {
 	fmt.Println(isValid("()[][()]"))
 	fmt.Println(isValid("()"))
 	fmt.Println(isValid("([[{}]])"))
