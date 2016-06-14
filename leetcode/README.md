@@ -66,6 +66,9 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [binary-tree-maximum-path-sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) 给出一颗二叉树，其中一条路径的值为该路径上所有节点值的和，求最大的路径值。dfs
 
 [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) 简单的字符串操作
+
+[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) 简单模拟题
+
 [338. Counting Bits](https://leetcode.com/problems/counting-bits/) 给一个数据n,求出0<=i<=num中i用二进制表示时1的个数
 
 ```  
