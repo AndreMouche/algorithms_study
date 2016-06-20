@@ -69,6 +69,19 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 
 [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) 简单模拟题
 
+[21.Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) 合并已排序链表
+
+[24.Swap NOdes in pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) 简单链表操作
+
+[38. Count And Say](https://leetcode.com/problems/count-and-say/) 简单模拟题，本来以为是数学题，当模拟题做了，测了1000的用例两边都超时，提交一把居然过了，在discuss里也没看到高效的用法，许是我想多了，应该就是简单的模拟题，考字符串操作吧。
+
+[65.Valid Number](https://leetcode.com/problems/valid-number/) 判断字符串是否为数字，模拟题，就是测试数据太变态，要很仔细很仔细才行。。
+
+[68. Text Justification](https://leetcode.com/problems/text-justification/) 模拟题，细心即可。
+
+[104.MaxDepthOfBinary.java](https://leetcode.com/problems/maximum-depth-of-binary-tree/) 求二叉树的树高，非递归解法&递归
+
+
 [338. Counting Bits](https://leetcode.com/problems/counting-bits/) 给一个数据n,求出0<=i<=num中i用二进制表示时1的个数
 
 ```  
@@ -85,22 +98,11 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 
 [337. House Robber III](https://leetcode.com/problems/house-robber-iii/) 简单递归，树
 
-[65.Valid Number](https://leetcode.com/problems/valid-number/) 判断字符串是否为数字，模拟题，就是测试数据太变态，要很仔细很仔细才行。。
-
-[68. Text Justification](https://leetcode.com/problems/text-justification/) 模拟题，细心即可。
-
-[104.MaxDepthOfBinary.java](https://leetcode.com/problems/maximum-depth-of-binary-tree/) 求二叉树的树高，非递归解法&递归
-
-
 [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) 简单题
 
 [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) 简单题，排列组合
 
 [202.Happy Number](https://leetcode.com/problems/happy-number/) 简单题，模拟，检查循坏
-
-[21.Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) 合并已排序链表
-
-[24.Swap NOdes in pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) 简单链表操作
 
 [58.Length of Last World](https://leetcode.com/problems/length-of-last-word/) 简单字符串操作
 
