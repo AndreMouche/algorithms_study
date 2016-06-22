@@ -81,6 +81,8 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 
 [104.MaxDepthOfBinary.java](https://leetcode.com/problems/maximum-depth-of-binary-tree/) 求二叉树的树高，非递归解法&递归
 
+[190.Reverse Bits](https://leetcode.com/problems/reverse-bits/) 反转二进制，使用存二进制算法，注意不要用&替代取模，取模会溢出。
+
 [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) 遍历二叉树，简单模拟题
 
 [338. Counting Bits](https://leetcode.com/problems/counting-bits/) 给一个数据n,求出0<=i<=num中i用二进制表示时1的个数
