@@ -83,6 +83,8 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 
 [190.Reverse Bits](https://leetcode.com/problems/reverse-bits/) 反转二进制，使用存二进制算法，注意不要用&替代取模，取模会溢出。
 
+[203.Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) 数据结构基础，删除链表中指定值所在的点。
+
 [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) 遍历二叉树，简单模拟题
 
 [338. Counting Bits](https://leetcode.com/problems/counting-bits/) 给一个数据n,求出0<=i<=num中i用二进制表示时1的个数
