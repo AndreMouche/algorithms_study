@@ -128,6 +128,7 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [342.Power Of Four](https://leetcode.com/problems/power-of-four/) 简单题
 
 [118.Pascal's Trangle](https://leetcode.com/problems/pascals-triangle/) 简单题
+
 [119. Pascal's Triangle II] (https://leetcode.com/problems/pascals-triangle-ii/) 简单题，注意空间复杂度
 
 [26. Remove Duplicated from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 简单题  
@@ -155,3 +156,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) 简单题，合并两个排序数组，从后往前扫
 
 [299. Bulls And Cows](https://leetcode.com/problems/bulls-and-cows/) 简单模拟题
+
+[371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)用位运算实现加法，注意负数的处理.
