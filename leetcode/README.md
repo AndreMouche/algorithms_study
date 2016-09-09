@@ -158,3 +158,5 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 [299. Bulls And Cows](https://leetcode.com/problems/bulls-and-cows/) 简单模拟题
 
 [371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)用位运算实现加法，注意负数的处理.
+
+[389. Find the Difference](https://leetcode.com/problems/find-the-difference/) 简单提，hash
