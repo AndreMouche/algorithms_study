@@ -161,4 +161,6 @@ AIT, BIT, CIT, DIT...     ABT, ACT, ADT....
 
 [383. Ransom Note](https://leetcode.com/problems/ransom-note/) 简单题，hash
 
+[387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) 简单题，hash
+
 [389. Find the Difference](https://leetcode.com/problems/find-the-difference/) 简单提，hash
