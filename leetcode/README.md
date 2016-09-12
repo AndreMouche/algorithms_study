@@ -7,6 +7,7 @@
 
 [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) 简单题，判断数字是否回文，负数特判
 
+[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) 简单题，字符串
 
 [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) 简单模拟题
 
