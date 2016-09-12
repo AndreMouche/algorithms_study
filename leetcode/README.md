@@ -31,6 +31,8 @@
 
 [66.Plus One](https://leetcode.com/problems/plus-one/) 简单模拟题，模拟十进制相加
 
+[67. Add Binary ](https://leetcode.com/problems/add-binary/) 二进制相加
+
 [68. Text Justification](https://leetcode.com/problems/text-justification/) 模拟题，细心即可。
 
 [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) 简单题，排列组合
