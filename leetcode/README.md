@@ -19,6 +19,7 @@
 
 [27. Remove Element](https://leetcode.com/problems/remove-element/) 简单模拟题
 
+[28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) 实现strStr(),KMP
 
 [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) 简单模拟题，不需要判断斜对角哦
 
