@@ -179,3 +179,5 @@ struct RandomListNode {
 [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) 简单题，hash
 
 [389. Find the Difference](https://leetcode.com/problems/find-the-difference/) 简单提，hash
+
+[400. Nth Digit](https://leetcode.com/problems/nth-digit/) 中等吧。总结规律，模拟实现，注意细节
