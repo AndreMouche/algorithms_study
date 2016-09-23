@@ -183,4 +183,6 @@ struct RandomListNode {
 
 [396. Rotate Function](https://leetcode.com/problems/rotate-function/) 注意F(id)与F(id+1)的关系，O（n）
 
+[397. Integer Replacement](https://leetcode.com/problems/integer-replacement/) 递归，注意边界。
+
 [400. Nth Digit](https://leetcode.com/problems/nth-digit/) 中等吧。总结规律，模拟实现，注意细节
