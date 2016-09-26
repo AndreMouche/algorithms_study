@@ -42,6 +42,8 @@
 
 [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) 简单题，合并两个排序数组，从后往前扫
 
+[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) 二叉树中序遍历
+
 [101.Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) 简单模拟题
 
 [102.Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) 107 的简化版，同样的思路，唯一不同的是这题用go自己实现了一个队列
@@ -124,6 +126,10 @@ struct RandomListNode {
 
 [140. Word Break II](https://oj.leetcode.com/problems/word-break-ii/) 给定一个字典和字符串，判断该字符串能否由字典里面的多个单词组成,若能，请输出所有组合。与上题类似，但需要拿到组合就比较麻烦了。观察了下也就两种方法，要么开个大数组存储用dp存储每一步的数据，没有空间就用递归来解决。
 
+[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) 二叉树先序遍历
+
+[145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) 二叉树后序遍历
+
 [155. Min Stack](https://leetcode.com/problems/min-stack/) 数据结构，实现获取栈中最小值。
 
 [160. Intersection of two linked lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) 这个数学题
@@ -197,3 +203,7 @@ struct RandomListNode {
 [397. Integer Replacement](https://leetcode.com/problems/integer-replacement/) 递归，注意边界。
 
 [400. Nth Digit](https://leetcode.com/problems/nth-digit/) 中等吧。总结规律，模拟实现，注意细节
+
+[404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) 求二叉树左叶子节点的和
+
+[405. Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) 将数字转为十六进制
