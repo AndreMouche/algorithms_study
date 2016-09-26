@@ -134,6 +134,8 @@ struct RandomListNode {
 
 [203.Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) 数据结构基础，删除链表中指定值所在的点。
 
+[204. Count Primes](https://leetcode.com/problems/count-primes/) 使用bitmap节约空间
+
 [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) 判断象形字符串，简单模拟
 
 [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) 简单题，set
