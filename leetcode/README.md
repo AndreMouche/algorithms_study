@@ -149,6 +149,11 @@ struct RandomListNode {
 
 [299. Bulls And Cows](https://leetcode.com/problems/bulls-and-cows/) 简单模拟题
 
+[303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) DP
+
+[307. Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) 线段树
+
+
 [336. Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/) 模拟推到过程，暴力－－－应该有更好的解法，偶不会。。
 
 [337. House Robber III](https://leetcode.com/problems/house-robber-iii/) 简单递归，树
