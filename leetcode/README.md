@@ -5,6 +5,8 @@
 
 [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) 简单的字符串操作
 
+[7. Reverse Integer](https://leetcode.com/problems/reverse-integer/) 数字反转。注意越界情况。PS：golang弄个越界真有点恶心啊
+
 [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) 简单题，判断数字是否回文，负数特判
 
 [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) 简单题，字符串
