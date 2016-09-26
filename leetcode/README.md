@@ -122,6 +122,8 @@ struct RandomListNode {
 
 [140. Word Break II](https://oj.leetcode.com/problems/word-break-ii/) 给定一个字典和字符串，判断该字符串能否由字典里面的多个单词组成,若能，请输出所有组合。与上题类似，但需要拿到组合就比较麻烦了。观察了下也就两种方法，要么开个大数组存储用dp存储每一步的数据，没有空间就用递归来解决。
 
+[155. Min Stack](https://leetcode.com/problems/min-stack/) 数据结构，实现获取栈中最小值。
+
 [160. Intersection of two linked lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) 这个数学题
 
 [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) 简单数学题
