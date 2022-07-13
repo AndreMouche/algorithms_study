@@ -12,19 +12,27 @@ impl Solution {
      * 所以总点数为：row_num*n + column_num*m - 2 * column_num*row_num
      */
     pub fn odd_cells(m: i32, n: i32, indices: Vec<Vec<i32>>) -> i32 {
-        let mut columns:Vec<bool> = vec![];
-        columns.resize(n as usize,false);
-        let mut rows:Vec<bool> = vec![];
-        rows.resize(m as usize,false);
-        indices.iter().for_each(|cell|{
-            let (ri,ci) = (cell[0] as usize,cell[1] as usize);
-            rows[ri]=!rows[ri];
-            columns[ci]=!columns[ci];
+        let mut columns: Vec<bool> = vec![];
+        columns.resize(n as usize, false);
+        let mut rows: Vec<bool> = vec![];
+        rows.resize(m as usize, false);
+        indices.iter().for_each(|cell| {
+            let (ri, ci) = (cell[0] as usize, cell[1] as usize);
+            rows[ri] = !rows[ri];
+            columns[ci] = !columns[ci];
         });
-        let (mut r,mut c) = (0,0);
-        rows.iter().for_each(|x| if *x==true {r=r+1;});
-        columns.iter().for_each(|x| if *x==true{c=c+1;});
-        return r*n + c*m - 2*c*r;
+        let (mut r, mut c) = (0, 0);
+        rows.iter().for_each(|x| {
+            if *x == true {
+                r = r + 1;
+            }
+        });
+        columns.iter().for_each(|x| {
+            if *x == true {
+                c = c + 1;
+            }
+        });
+        return r * n + c * m - 2 * c * r;
     }
 }
 
@@ -38,12 +46,12 @@ mod tests {
     fn test_odd_cells() {
         let test_data = vec![
             // m = 2, n = 3, indices = [[0,1],[1,1]] => 6
-           (2,3,vec![vec![0,1],vec![1,1]],6),
-           // m = 2, n = 2, indices = [[1,1],[0,0]] => 0
-           (2,2,vec![vec![1,1],vec![0,0]],0)
+            (2, 3, vec![vec![0, 1], vec![1, 1]], 6),
+            // m = 2, n = 2, indices = [[1,1],[0,0]] => 0
+            (2, 2, vec![vec![1, 1], vec![0, 0]], 0),
         ];
-        for (m,n,indices,expect) in test_data {
-            let got = Solution::odd_cells(m,n,indices);
+        for (m, n, indices, expect) in test_data {
+            let got = Solution::odd_cells(m, n, indices);
             assert_eq!(got, expect);
         }
     }
