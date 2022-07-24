@@ -1,12 +1,16 @@
 /**
  * https://leetcode.cn/problems/my-calendar-ii/solution/by-lfool-nodi/
- * 经典线段树模拟，注意细节处理，困了困了，不说太多了。
+ * 经典线段树模拟，但这边做了一些简单优化，多叉树+二分优化。注意细节处理，困了困了，不说太多了。
+ * 97 / 97 个通过测试用例
+ * 状态：通过
+ * 执行用时: 20 ms 速度超过 100% rust 提交记录。
+ * 内存消耗: 2.6 MB 内存占用低于 100% rust 提交记录
  */
 struct Node {
     left: i32,
     right: i32,
     value: i32,
-    children_value: i32,
+    children_value: i32, // the max value from the children.
     children: Vec<Box<Node>>,
 }
 
@@ -152,7 +156,7 @@ impl Node {
                 l
             }
         };
-
+        // merge the node in [start,end) to one.
         let mut new_node = Node::new(new_start, end, 1);
         while let Some(node) = self.children.get(start_index) {
             //start,node.left,node.right,end
