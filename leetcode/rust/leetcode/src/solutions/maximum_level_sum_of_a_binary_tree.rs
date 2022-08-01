@@ -18,6 +18,7 @@ impl TreeNode {
             right: None,
         }
     }
+
     pub fn visit(&self, cur_level: usize, mut sum: Vec<i32>) -> Vec<i32> {
         if let Some(v) = sum.get_mut(cur_level) {
             *v = *v + self.val;
@@ -101,6 +102,84 @@ impl Solution {
         }
         return max_level;
     }
+
+    pub fn max_level_sum2(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        let mut queue = VecDeque::new();
+        // init max value(consider the max value may be negitive)
+        let (mut cur_level_num, mut max_level, mut max_level_sum) = match root {
+            Some(node) => {
+                let cur_level_sum = node.as_ref().borrow().val;
+                queue.push_back(node);
+                (1, 1, cur_level_sum)
+            }
+            None => {
+                return 0;
+            }
+        };
+        let mut next_level_num = 0;
+        let mut cur_level_sum = 0;
+        let mut cur_level = 1;
+        while let Some(node) = queue.pop_front() {
+            cur_level_sum = cur_level_sum + node.as_ref().borrow().val;
+            cur_level_num = cur_level_num - 1;
+            if let Some(left) = node.as_ref().borrow().left.as_ref() {
+                queue.push_back(left.clone());
+                next_level_num = next_level_num + 1;
+            }
+            if let Some(right) = node.as_ref().borrow().right.as_ref() {
+                queue.push_back(right.clone());
+                next_level_num = next_level_num + 1;
+            }
+            // if cur level finished, reset the values.
+            if cur_level_num == 0 {
+                if cur_level_sum > max_level_sum {
+                    max_level_sum = cur_level_sum;
+                    max_level = cur_level;
+                }
+                cur_level = cur_level + 1;
+                cur_level_num = next_level_num;
+                cur_level_sum = 0;
+                next_level_num = 0;
+            }
+        }
+        return max_level;
+    }
+
+    pub fn max_level_sum3(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        let mut queue = vec![];
+        // init max value(consider the max value may be negitive)
+        let (mut max_level, mut max_level_sum) = match root {
+            Some(node) => {
+                let cur_level_sum = node.as_ref().borrow().val;
+                queue.push(node);
+                (1, cur_level_sum)
+            }
+            None => {
+                return 0;
+            }
+        };
+        let mut cur_level = 1;
+        while !queue.is_empty() {
+            let mut next_level_nodes = vec![];
+            let mut cur_level_sum = 0;
+            for node in queue.drain(..) {
+                cur_level_sum = cur_level_sum + node.as_ref().borrow().val;
+                if let Some(left) = node.as_ref().borrow().left.as_ref() {
+                    next_level_nodes.push(left.clone());
+                }
+                if let Some(right) = node.as_ref().borrow().right.as_ref() {
+                    next_level_nodes.push(right.clone());
+                }
+            }
+            if cur_level_sum > max_level_sum {
+                max_level_sum = cur_level_sum;
+                max_level = cur_level;
+            }
+            cur_level = cur_level + 1;
+            queue = next_level_nodes;
+        }
+        return max_level;
+    }
 }
 
 #[cfg(test)]
@@ -130,7 +209,7 @@ mod tests {
         ];
         for (vals, expect) in test_data {
             let root = TreeNode::build(vals);
-            let max_level = Solution::max_level_sum(root);
+            let max_level = Solution::max_level_sum3(root);
             assert_eq!(max_level, expect);
         }
     }
