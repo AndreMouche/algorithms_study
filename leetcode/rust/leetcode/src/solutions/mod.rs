@@ -1,7 +1,9 @@
 pub mod asteroid_collision;
 pub mod cells_with_odd_values_in_metrix;
+pub mod contains_duplicate;
 pub mod generate_a_string_with_characters_that_have_odd_counts;
 pub mod maximum_level_sum_of_a_binary_tree;
+pub mod maximum_subarray;
 pub mod my_calendar_i;
 pub mod my_calendar_ii;
 pub mod skiplist;
