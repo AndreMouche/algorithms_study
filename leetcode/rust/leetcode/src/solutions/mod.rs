@@ -2,6 +2,7 @@ pub mod asteroid_collision;
 pub mod cells_with_odd_values_in_metrix;
 pub mod contains_duplicate;
 pub mod generate_a_string_with_characters_that_have_odd_counts;
+pub mod intersection_of_two_arrays_ii;
 pub mod maximum_level_sum_of_a_binary_tree;
 pub mod maximum_subarray;
 pub mod merge_sorted_array;
