@@ -1,4 +1,5 @@
 pub mod asteroid_collision;
+pub mod best_time_to_buy_and_sell_stock;
 pub mod cells_with_odd_values_in_metrix;
 pub mod contains_duplicate;
 pub mod generate_a_string_with_characters_that_have_odd_counts;
