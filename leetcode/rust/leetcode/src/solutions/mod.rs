@@ -10,6 +10,8 @@ pub mod maximum_subarray;
 pub mod merge_sorted_array;
 pub mod my_calendar_i;
 pub mod my_calendar_ii;
+pub mod pascals_triangle;
+pub mod resharp_the_matrix;
 pub mod skiplist;
 pub mod two_sum;
 pub mod zigconversion;
