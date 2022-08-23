@@ -14,4 +14,5 @@ pub mod pascals_triangle;
 pub mod resharp_the_matrix;
 pub mod skiplist;
 pub mod two_sum;
+pub mod valid_sudoku;
 pub mod zigconversion;
