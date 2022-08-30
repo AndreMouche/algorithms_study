@@ -12,6 +12,7 @@ pub mod merge_sorted_array;
 pub mod my_calendar_i;
 pub mod my_calendar_ii;
 pub mod pascals_triangle;
+pub mod ransom_note;
 pub mod resharp_the_matrix;
 pub mod set_zero;
 pub mod skiplist;
