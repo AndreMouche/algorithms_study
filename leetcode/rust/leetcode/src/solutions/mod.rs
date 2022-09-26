@@ -10,6 +10,7 @@ pub mod longest_palidromic_substring;
 pub mod maximum_level_sum_of_a_binary_tree;
 pub mod maximum_subarray;
 pub mod merge_sorted_array;
+pub mod missing_two_lcci;
 pub mod my_calendar_i;
 pub mod my_calendar_ii;
 pub mod pascals_triangle;
