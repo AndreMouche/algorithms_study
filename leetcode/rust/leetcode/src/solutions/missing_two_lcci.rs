@@ -49,4 +49,10 @@ mod tests {
             assert_eq!(got, expect.to_vec());
         }
     }
+
+    fn test_lalalalal() {
+        let data: Vec<u8> = vec![
+            116, 128, 0, 0, 0, 0, 0, 1, 171, 95, 114, 128, 0, 0, 13, 234, 3, 59, 57,
+        ];
+    }
 }
