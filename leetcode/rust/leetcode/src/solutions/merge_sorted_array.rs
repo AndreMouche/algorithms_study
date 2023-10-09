@@ -6,6 +6,35 @@ impl Solution {
     */
     pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
         let len = (m + n) as usize;
+        nums1.resize(len, 0);
+        let mut id1 = m as usize;
+        let mut id2 = n as usize;
+
+        // Move the elements of nums1 to the right by the length of nums2.
+        for i in (id2..id1).rev() {
+            nums1[i + id2] = nums1[i];
+        }
+
+        id1 += id2;
+
+        while id2 > 0 && id1 > id2 {
+            if nums1[id1 - 1] < nums2[id2 - 1] {
+                nums1[id1 - 1] = nums2[id2 - 1];
+                id2 -= 1;
+            } else {
+                nums1[id1 - 1] = nums1[id1 - id2 - 1];
+                id1 -= 1;
+            }
+        }
+
+        while id2 > 0 {
+            nums1[id2 - 1] = nums2[id2 - 1];
+            id2 -= 1;
+        }
+    }
+
+    pub fn merge2(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
+        let len = (m + n) as usize;
         nums1.resize(len as usize, 0);
         let mut id1 = m as usize;
         let mut id2 = n as usize;

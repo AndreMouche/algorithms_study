@@ -23,4 +23,6 @@ pub mod set_zero;
 pub mod skiplist;
 pub mod two_sum;
 pub mod valid_sudoku;
+pub mod weekly_contest_365;
+pub mod weekly_contest_366;
 pub mod zigconversion;
