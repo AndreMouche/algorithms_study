@@ -20,6 +20,7 @@ pub mod pascals_triangle;
 pub mod ransom_note;
 pub mod remove_linked_list_elements;
 pub mod resharp_the_matrix;
+pub mod reward_top_k_students;
 pub mod set_zero;
 pub mod skiplist;
 pub mod two_sum;
