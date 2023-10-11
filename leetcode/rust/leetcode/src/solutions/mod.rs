@@ -13,6 +13,7 @@ pub mod maximum_subarray;
 pub mod merge_sorted_array;
 pub mod minum_number_of_operations_to_move_all_balls_to_each_box;
 pub mod missing_two_lcci;
+pub mod movement_of_rebots;
 pub mod my_calendar_i;
 pub mod my_calendar_ii;
 pub mod pascals_triangle;
