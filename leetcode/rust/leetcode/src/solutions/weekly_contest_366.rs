@@ -180,6 +180,27 @@ impl Solution {
 
         return ans as i32;
     }
+
+    /**
+     * https://leetcode.cn/problems/find-the-array-concatenation-value/
+     */
+    pub fn find_the_array_conc_val(nums: Vec<i32>) -> i64 {
+        let mut ans = 0;
+        for id in 0..nums.len() / 2 {
+            let mut right = nums[nums.len() - id - 1];
+            ans = ans + right as i64;
+            let mut left = nums[id];
+            while right > 0 {
+                right = right / 10;
+                left = left * 10;
+            }
+            ans = ans + left as i64;
+        }
+        if nums.len() % 2 != 0 {
+            ans = ans + nums[nums.len() / 2] as i64;
+        }
+        return ans;
+    }
 }
 
 #[cfg(test)]
