@@ -1,5 +1,6 @@
 pub mod asteroid_collision;
 pub mod best_time_to_buy_and_sell_stock;
+pub mod bitmap;
 pub mod cells_with_odd_values_in_metrix;
 pub mod contains_duplicate;
 pub mod final_prices_with_a_special_discont_in_a_shop;
